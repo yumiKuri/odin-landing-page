@@ -39,6 +39,7 @@ h3 {
 h4 {
   font-size: var(--fs-h4);
   line-height: 1.4;
+  margin: 0;
 }
 
 
@@ -66,9 +67,6 @@ nav{
 
 .container{
     max-width: 70vw;
-}
-
-.container{
     margin: 0 auto;
 }
 
@@ -132,6 +130,68 @@ nav{
 
 .content p{
     margin-top: 0.3rem;
+}
+
+#collection .container{
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.container h2{
+    margin-bottom: 2rem;
+}
+
+.grid-table{
+    --card: 260px;
+    --gap: 1.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--gap);
+
+    width: min(100% - 2rem, calc(3 * var(--card) + 2 * var(--gap)));
+    margin-inline: auto
+}
+
+
+.frame{
+    width: var(--card);
+    background-color: var(--color-quote-bg);
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.image{
+    width: 100%;
+    overflow: hidden;
+    background: #f3f4f6;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+}
+
+.image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.frame h4{
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.frame p{
+    color: var(--color-quote-text);
+    margin: 0;
+    line-height: 1.4;
+    min-height: calc(1.4em * 2);
 }
 
 #quote{
