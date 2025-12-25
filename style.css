@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-bg: #1F2937;
+    --color-main-text: #F9FAF8;
+    --color-secondary-text: #E5E7EB;
+    --color-button:#3882F6;
+    --color-quote-bg: #E5E7EB;
+    --color-quote-text: #1f2937;
+
+    --fs-body: clamp(1rem, 1.1vw, 1.125rem);
+    --fs-h1: clamp(2rem, 4vw, 3.5rem);
+    --fs-h2: clamp(1.5rem, 2.5vw, 2.25rem);
+    --fs-h3: clamp(1.25rem, 1.8vw, 1.75rem);
+    --fs-h4: clamp(1.125rem, 1.4vw, 1.5rem);
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  line-height: 1.35;
+}
+
+h4 {
+  font-size: var(--fs-h4);
+  line-height: 1.4;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',  sans-serif;
+    font-size: var(--fs-body);
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-main-text);
+}
+
+nav{
+    width: 100%;
+    background-color: var(--color-bg);
+}
+
+.container{
+    max-width: 70vw;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.container .nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+}
+
+.nav-container .menu{
+    display: flex;
+    gap: 1.5rem;
+}
+
+#intro{
+    background-color: var(--color-bg);
+}
+
+.intro-container{
+    display: flex;
+    align-items: stretch;
+    padding: 4rem 0;
+    gap: 2rem;
+}
+
+.intro-container .content{
+    flex: 1;
+}
+
+.intro-container .intro-media{
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    min-height: 0;
+}
+
+.intro-media img{
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.intro-container a{
+    background-color: var(--color-button);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.content h1{
+    color: var(--color-main-text);
+}
+
+.content p, h3{
+    color: var(--color-secondary-text);
+}
+
+.content p{
+    margin-top: 0.3rem;
+}
+
+#quote{
+    background-color: var(--color-quote-bg);
+}
+
