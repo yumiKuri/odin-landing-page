@@ -252,3 +252,15 @@ blockquote footer, cite{
     border: white solid 2px;
     border-radius: 15px;
 }
+
+.site-footer{
+    color: var(--color-main-text);
+    background-color: var(--color-bg);
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+p:nth-of-type(2){
+    color: var(--color-quote-bg);
+}
